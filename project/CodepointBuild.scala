@@ -10,8 +10,10 @@ object CodepointBuild extends Build {
       name := "codepoint",
       organization := "vertical.blank",
       version := "0.1-SNAPSHOT",
-      scalaVersion := "2.10.2"
+      scalaVersion := "2.11.8",
       // add other settings here
+      libraryDependencies += 
+        "org.scalacheck" %% "scalacheck" % "1.13.2" % "test"
     )
   )
 }
